@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import TodoList from "./TodoList";  // Assuming TodoList is in the same folder as App.js
-import TodoModal from "./TodoModal";  // Assuming TodoModal is in the same folder as App.js
+import TodoList from "../TodoList";
+import TodoModal from "../TodoModal";
 
-const App = () => {
+const TodoItems = () => {
   const [inputValue, setInputValue] = useState("");
   const [todos, setTodos] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -96,4 +96,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default TodoItems;
